@@ -1,11 +1,15 @@
-
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Menu from "./skladowe/Menu";
 
 function App() {
   return (
-    <div className="App">
-      <h1>menu</h1>
-    </div>
+    <>
+      <Router>
+        <Menu/>
+        <Route path='/'  exact />
+      </Router>
+    </>
   );
 }
 
